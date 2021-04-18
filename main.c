@@ -1,6 +1,6 @@
 #include <msp430.h>
 #include "stdint.h"
-int cnt =0;
+int cnt = 0;
 void main(void)
 {
   WDTCTL = WDTPW + WDTHOLD;       //desactivation Watch Dog Timer
