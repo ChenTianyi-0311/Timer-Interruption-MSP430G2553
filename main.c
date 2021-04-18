@@ -28,6 +28,5 @@ __interrupt void ma_fnc_timer(void)
         P1OUT ^= BIT0;            //changement d'etat LED rouge
     }
     TA0CTL &= ~TAIFG;//RAZ TAIFG
-
- }
+}
 
