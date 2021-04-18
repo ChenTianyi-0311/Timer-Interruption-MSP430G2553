@@ -21,12 +21,11 @@ void main(void)
 #pragma vector=TIMER0_A1_VECTOR   
 __interrupt void ma_fnc_timer(void)
 {
-    cnt ++;
-    if(cnt==20)
-    {
-        cnt =0;
-        P1OUT ^= BIT0;            //changement d'etat LED rouge
-    }
-    TA0CTL &= ~TAIFG;//RAZ TAIFG
+  cnt ++;
+  if(cnt == 20)
+  {
+    cnt = 0;
+    P1OUT ^= BIT0;            //changement d'etat LED rouge
+  }
+  TA0CTL &= ~TAIFG;//RAZ TAIFG
 }
-
